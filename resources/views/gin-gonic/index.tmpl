@@ -1,5 +1,7 @@
 {{ template "header" .}}
 
+{{with .flash_success}}<div class="alert alert-success">{{.}}</div>{{end}}
+{{with .flash_error}}<div class="alert alert-danger">{{.}}</div>{{end}}
 <h1 class="text-center" style="margin-top: 40vh">{{.content}}</h1>
 
 </body>
