@@ -104,7 +104,7 @@ func setupAuthboss() {
 	}
 }
 
-func main() {
+func mainDefault() {
 	// Initialize Sessions and Cookies
 	// Typically gorilla securecookie and sessions packages require
 	// highly random secret keys that are not divulged to the public.

@@ -1,0 +1,12 @@
+{{template "header" .}}
+
+    {{with .flash_success}}<div class="alert alert-success">{{.}}</div>{{end}}
+    {{with .flash_error}}<div class="alert alert-danger">{{.}}</div>{{end}}
+    {{template "yield" .}}
+    {{template "authboss" .}}
+
+</body>
+</html>
+{{define "pagetitle"}}{{end}}
+{{define "yield"}}{{end}}
+{{define "authboss"}}{{end}}
